@@ -12,7 +12,7 @@ import { motion } from "framer-motion"
 import corporeosImg from "@/assets/images/services/corporeos.webp"
 import neonImg from "@/assets/images/services/neon.webp"
 import ploteoImg from "@/assets/images/services/ploteo_vehicular.webp"
-import gigantografiasImg from "@/assets/images/services/gigantografias.webp"
+import gigantografiasImg from "@/assets/images/services/gigantografias.jpg"
 
 const services = [
   {
