@@ -6,6 +6,8 @@ import {
 
 import { FaInstagram } from "react-icons/fa"
 
+import logo from "@/assets/icons/logo-wes-8.png"
+
 function Footer() {
 
   return (
@@ -26,19 +28,11 @@ function Footer() {
 
             <div className="mb-6 flex items-center gap-4">
 
-              <div className="
-                flex h-14 w-14 items-center justify-center
-                rounded-2xl
-                bg-gradient-to-r from-cyan-400 to-violet-500
-                font-black text-black
-              ">
-                W
-              </div>
-
-              <h2 className="text-3xl font-black tracking-[4px]">
-                WES
-              </h2>
-
+              <img
+                src={logo}
+                alt="Wes Gigantografías"
+                className="h-14 w-auto object-contain"
+              />
             </div>
 
             <p className="max-w-xl text-lg leading-relaxed text-white/60">
@@ -174,7 +168,7 @@ function Footer() {
           </p>
 
           <p>
-            Diseño & Desarrollo Premium
+            Diseño & Desarrollo por WES
           </p>
 
         </div>

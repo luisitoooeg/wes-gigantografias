@@ -2,6 +2,8 @@ import { useEffect, useState } from "react"
 
 import { motion } from "framer-motion"
 
+import logo from "@/assets/icons/logo-wes-8.png"
+
 function Navbar() {
 
   const [scrolled, setScrolled] = useState(false)
@@ -87,31 +89,23 @@ function Navbar() {
 
           <div className="flex items-center gap-3">
 
-            <div className="
-              flex h-11 w-11 items-center justify-center
-              rounded-xl
-              bg-gradient-to-br
-              from-cyan-400
-              to-violet-500
-              font-black
-              text-black
-            ">
-
-              W
-
-            </div>
+            <img
+  src={logo}
+  alt="Wes Gigantografías"
+  className="h-14 w-auto object-contain"
+/>
 
             <div>
 
               <h1 className="text-sm font-black tracking-[3px]">
 
-                WES GIGANTOGRAFÍAS
+                WES
 
               </h1>
 
-              <p className="text-xs text-white/40">
+              <p className="text-sm font-black tracking-[3px]">
 
-                Comunicación Visual
+                GIGANTOGRAFÍAS
 
               </p>
 
