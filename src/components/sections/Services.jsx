@@ -13,6 +13,9 @@ import corporeosImg from "@/assets/images/services/corporeos.webp"
 import neonImg from "@/assets/images/services/neon.webp"
 import ploteoImg from "@/assets/images/services/ploteo_vehicular.webp"
 import gigantografiasImg from "@/assets/images/services/gigantografias.jpg"
+import eventosImg from "@/assets/images/services/eventos.webp"
+import vinilosImg from "@/assets/images/services/vinilos.webp"
+
 
 const services = [
   {
@@ -32,7 +35,7 @@ const services = [
   {
     title: "Vinilos",
     subtitle: "Vidrios y paredes",
-    image: "/images/services/vinilos.jpg",
+    image: vinilosImg,
     link: "/vinilos",
   },
 
@@ -46,7 +49,7 @@ const services = [
   {
     title: "Eventos",
     subtitle: "Gigantografías y gráfica",
-    image: "/images/services/eventos.jpg",
+    image: eventosImg,
     link: "/gigantografias-eventos",
   },
 ]
