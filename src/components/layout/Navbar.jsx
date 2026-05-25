@@ -163,7 +163,7 @@ function Navbar() {
             "
           >
 
-            Cotizar
+            Presupuesto
 
           </a>
 

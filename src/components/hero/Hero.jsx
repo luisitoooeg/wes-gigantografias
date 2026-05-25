@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button"
 
+import HeroSlider from "./HeroSlider"
+
 import {
   motion,
   useScroll,
@@ -20,7 +22,7 @@ function Hero() {
 
   return (
 
-    <section className="relative flex min-h-screen items-center justify-center overflow-hidden px-6 pt-40">
+    <section className="relative flex min-h-[120vh] items-center justify-center overflow-hidden px-6 pt-40">
 
       {/* VIDEO BACKGROUND */}
 
@@ -29,21 +31,13 @@ function Hero() {
         className="absolute inset-0"
       >
 
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="h-full w-full object-cover opacity-30"
-        >
-          <source src="/videos/hero.mp4" type="video/mp4" />
-        </video>
+       <HeroSlider />
 
       </motion.div>
 
       {/* OVERLAY */}
 
-      <div className="absolute inset-0 bg-black/70" />
+      <div className="absolute inset-0 bg-trasparent" />
 
       {/* GLOW EFFECTS */}
 
@@ -52,7 +46,7 @@ function Hero() {
         h-[500px] w-[500px]
         animate-pulse
         rounded-full
-        bg-cyan-400/20
+        bg-cyan-400/30
         blur-[140px]
       " />
 
@@ -61,7 +55,7 @@ function Hero() {
         h-[500px] w-[500px]
         animate-pulse
         rounded-full
-        bg-violet-500/20
+        bg-violet-500/356
         blur-[140px]
       " />
 
@@ -72,7 +66,7 @@ function Hero() {
           y: yText,
           opacity,
         }}
-        className="relative z-10 mx-auto max-w-7xl text-center"
+        className="relative z-10 mx-auto max-w-7xl -mt-32 text-center "
       >
 
         <motion.p
