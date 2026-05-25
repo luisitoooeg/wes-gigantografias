@@ -1,19 +1,20 @@
+import delcoImg from "@/assets/images/portfolio/neon.webp" 
  export const portfolio = [
   {
     id: 1,
 
-    title: "Neón Led Barbería",
+    title: "Cartelería Neon Led RGB",
 
     category: "Neón Led",
 
     
-    client: "Barber House",
+    client: "Delco Stream",
 
     description:
-    "Diseño y producción de cartelería Neón Led premium para barbería moderna.",
+    "Diseño y producción de cartelería Neón Led RGB para canal de stream.",
 
     image:
-      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1400",
+      delcoImg,
   },
 
   {
