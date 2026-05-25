@@ -58,7 +58,7 @@ function Services() {
 
   return (
 
-    <section className="relative overflow-hidden px-6 py-40">
+    <section className="relative overflow-hidden px-4 md:px-6 py-40">
 
       {/* BACKGROUND GLOW */}
 
@@ -75,20 +75,20 @@ function Services() {
 
         {/* HEADER */}
 
-        <div className="mb-24 text-center">
+        <div className="mb-20 text-center">
 
-          <p className="mb-5 text-sm font-bold tracking-[6px] text-cyan-400">
+          <p className="mb-4 text-sm font-bold tracking-[8px] text-cyan-400">
             SERVICIOS
           </p>
 
-          <h2 className="text-5xl font-black uppercase md:text-7xl">
+          <h2 className="mb-6 text-3xl font-black uppercase md:text-7xl">
             Comunicación
             <span className="text-cyan-400">
               {" "}Visual
             </span>
           </h2>
 
-          <p className="mx-auto mt-8 max-w-3xl text-lg text-white/60">
+          <p className="mx-auto mb-10 max-w-3xl text-base leading-relaxed text-white/70 md:text-xl">
             Soluciones visuales modernas para empresas,
             marcas y proyectos que buscan destacar.
           </p>

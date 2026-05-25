@@ -22,7 +22,7 @@ function Hero() {
 
   return (
 
-    <section className="relative flex min-h-[120vh] items-center justify-center overflow-hidden px-6 pt-40">
+    <section className="relative flex min-h-[120vh] items-center justify-center overflow-hidden px-6 pt-30">
 
       {/* VIDEO BACKGROUND */}
 
@@ -79,26 +79,37 @@ function Hero() {
         </motion.p>
 
         <motion.h1
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="mb-8 text-6xl font-black uppercase leading-none md:text-8xl xl:text-[5rem]"
-        >
-          Impresión de gigantografías
-          <br />
+  initial={{ opacity: 0, y: 40 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8 }}
+  className="
+    mb-6
+    text-4xl
+    font-black
+    uppercase
+    leading-none
+    sm:text-5xl
+    md:text-7xl
+    xl:text-[10rem]
+  "
+>
+  IMPRESIÓN DE
+  <br />
 
-          <span className="bg-linear-to-r from-cyan-400 to-violet-500 bg-clip-text text-transparent">
-            en Santa Fe Capital
-          </span>
+  GIGANTOGRAFÍAS
 
-        </motion.h1>
+  <br />
+
+  <span className="bg-gradient-to-r from-cyan-400 to-violet-500 bg-clip-text text-transparent">
+    EN SANTA FE CAPITAL
+  </span>
+</motion.h1>
 
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4 }}
-          className="mx-auto mb-12 max-w-3xl text-lg leading-relaxed text-white/70 md:text-xl"
-        >
+className="mx-auto mb-10 max-w-3xl text-base leading-relaxed text-white/70 md:text-xl"        >
           Todo lo que buscas imprimir en Santa Fe, lo encontrás en WES Gigantografías. Contamos con más de 30 años de trayectoria ayudando a los santafesinos.
         </motion.p>
 
@@ -108,8 +119,7 @@ function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5 }}
-          className="flex flex-wrap items-center justify-center gap-5"
-        >
+className="flex flex-col items-center justify-center gap-4 sm:flex-row"        >
 
           <Button className="h-16 rounded-2xl bg-gradient-to-r from-cyan-400 to-violet-500 px-10 text-base font-black text-black hover:scale-105 hover:opacity-90">
             Solicitar Presupuesto

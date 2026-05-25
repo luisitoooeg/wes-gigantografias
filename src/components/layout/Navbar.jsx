@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 
 import logo from "@/assets/icons/logo-wes-8.png"
 
+
 function Navbar() {
 
   const [scrolled, setScrolled] = useState(false)
@@ -38,7 +39,7 @@ function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll)
 
   }, [])
-
+const [mobileMenu, setMobileMenu] = useState(false)
   return (
 
     <motion.header
@@ -67,7 +68,7 @@ function Navbar() {
             flex items-center justify-between
             rounded-full
             border
-            px-6 py-4
+            px-4 py-3 md:px-6 md:py-4
             transition-all duration-500
 
             ${scrolled
@@ -95,27 +96,69 @@ function Navbar() {
   className="h-14 w-auto object-contain"
 />
 
-            <div>
+            <div className="hidden md:block">
 
-              <h1 className="text-sm font-black tracking-[3px]">
+  <h1 className="text-sm font-black tracking-[3px]">
+    WES
+  </h1>
 
-                WES
+  <p className="text-sm font-black tracking-[3px]">
+    GIGANTOGRAFÍAS
+  </p>
 
-              </h1>
-
-              <p className="text-sm font-black tracking-[3px]">
-
-                GIGANTOGRAFÍAS
-
-              </p>
-
-            </div>
+</div>
 
           </div>
+          <button
+  onClick={() => setMobileMenu(!mobileMenu)}
+  className="
+    relative flex h-12 w-12 md:hidden
+  items-center justify-center
+  rounded-full
+  border border-white/10
+  bg-white/5
+  backdrop-blur-xl
+  "
+>
+
+  <span
+    className={`
+      absolute h-[2px] w-7 bg-white rounded-full
+      transition-all duration-300 ease-in-out
+
+      ${mobileMenu
+        ? "rotate-45"
+        : "-translate-y-2"}
+    `}
+  />
+
+  <span
+    className={`
+      absolute h-[2px] w-7 bg-white rounded-full
+      transition-all duration-300 ease-in-out
+
+      ${mobileMenu
+        ? "opacity-0"
+        : "opacity-100"}
+    `}
+  />
+
+  <span
+    className={`
+      absolute h-[2px] w-7 bg-white rounded-full
+      transition-all duration-300 ease-in-out
+
+      ${mobileMenu
+        ? "-rotate-45"
+        : "translate-y-2"}
+    `}
+  />
+
+</button>
 
           {/* NAV */}
 
-          <nav className="hidden items-center gap-10 lg:flex">
+          <nav className="hidden md:flex items-center gap-10">
 
             {[
               "Inicio",
@@ -145,23 +188,48 @@ function Navbar() {
 
           </nav>
 
+          {mobileMenu && (
+  <div className="absolute top-full left-0 w-full bg-[#050816]/95 backdrop-blur-xl border-t border-white/10 md:hidden">
+    
+    <div className="flex flex-col px-6 py-8 gap-6 text-white font-bold tracking-wide">
+
+      <a href="#inicio">INICIO</a>
+
+      <a href="#servicios">SERVICIOS</a>
+
+      <a href="#portfolio">PORTFOLIO</a>
+
+      <a href="#nosotros">NOSOTROS</a>
+
+      <a href="#contacto">CONTACTO</a>
+
+      <button className="mt-4 h-14 rounded-2xl bg-gradient-to-r from-cyan-400 to-violet-500 font-black text-black">
+        Presupuesto
+      </button>
+
+    </div>
+
+  </div>
+)}
+
           {/* CTA */}
 
-          <a
-            href="https://wa.me/5490000000000"
-            target="_blank"
-            className="
-              rounded-full
-              bg-gradient-to-r
-              from-cyan-400
-              to-violet-500
-              px-6 py-3
-              text-sm font-black
-              text-black
-              transition duration-300
-              hover:scale-105
-            "
-          >
+        <a
+  href="https://wa.me/5490000000000"
+  className="
+    hidden md:flex
+    items-center justify-center
+    rounded-full
+    bg-gradient-to-r
+    from-cyan-400
+    to-violet-500
+    px-6 py-3
+    text-sm font-black
+    text-black
+    transition duration-300
+    hover:scale-105
+  "
+>
 
             Presupuesto
 

@@ -25,7 +25,7 @@ function HeroSlider() {
           disableOnInteraction: false,
         }}
         loop
-        className="h-[52vh] w-full"
+        className="h-[40vh] md:h-[55vh] w-full"
          speed={2400}
       >
 
