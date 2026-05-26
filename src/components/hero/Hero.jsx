@@ -66,7 +66,7 @@ function Hero() {
           y: yText,
           opacity,
         }}
-        className="relative z-10 mx-auto max-w-7xl -mt-32 text-center "
+        className="relative z-10 mx-auto max-w-7xl mt-32 text-center "
       >
 
         <motion.p
@@ -90,7 +90,7 @@ function Hero() {
     leading-none
     sm:text-5xl
     md:text-7xl
-    xl:text-[10rem]
+    xl:text-5x1
   "
 >
   IMPRESIÓN DE
